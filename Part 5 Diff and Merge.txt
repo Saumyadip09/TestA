@@ -1,0 +1,16 @@
+Improve the visualization
+We can use tools 
+(diff-merge)
+Using this tool the visualization is much better.
+
+side by side comparison
+
+instead of typing git diff
+we are typing 
+git difftool
+
+
+Similarly instead of git merge
+we can use git mergetool
+
+A merge conflict comes when from master and from another feature branch we change the same file.

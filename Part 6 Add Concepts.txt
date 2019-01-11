@@ -1,0 +1,44 @@
+git status
+
+Here we have (for example)
+a file modified
+a file deleted
+a file in a sub directory modified.
+a file in a sub directory deleted.
+
+also had 
+untracked files in current directory
+untracked files in sub directory.
+
+git add -A or git add --all
+(Stage all of the changes in the entire
+working tree inlcuding sub directory)
+even in sub directory git add -A 
+will stage even in one directory above.
+
+git reset will revert it.
+
+Now if we want only the directory to work than
+git add -A mydir/
+
+
+
+2. git add -u or git add --update
+(modified and deleted files but not untracked files)-for the entire tree
+git add -u my_dir/ 
+will work only on the my_dir folder....
+
+3. git add .  (. means the current directory)
+it will be same as git add -A if we are in the top directory....
+but in a sub directory the git add . will only work on the that directory (or it's subdirectory
+but not the directories above it).
+git add -A will do for all.
+
+
+4. git add *(not recommended as * is a show command )
+normal like ls *
+(it will not list the hidden files or the deleted files) they are tracked by git
+
+now git add * will not show the hidden files and also may not show all the deleted files
+(It is possible that git add * may show some files which are deleted in the sub directories but not in the
+current directory or the directory above).

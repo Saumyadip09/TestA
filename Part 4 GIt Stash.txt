@@ -1,0 +1,40 @@
+to switch between branches while doing some work in them..
+or 
+temporary saving of the files and go to other branches....
+
+git statsh save "Worked on add function"
+
+git diff
+-no change
+git status
+-nothing to commit
+
+If we see our file the changes are gone.
+
+git stash list 
+(list the changes)...
+
+There are two ways to stash the changes back...
+
+1.git stash apply stash(0)...get it from get stash list command....
+
+**git checkout .. (this will reset to where we started)
+
+2. git stash pop (This will take the top stash and will delete the stash as well).
+
+git diff will show the changes...
+
+
+
+
+
+4. git stash drop  stash@{0}
+5. git stash clear (It will remove all the stash) - be very careful
+
+6. Also stash can carry over from branch to branch
+Say we made some changes to master branch and later we realize that we should have worked
+on the feature branch.
+git stash save ""
+git status
+git checkout branch
+git stash pop
